@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(drawingroom.jpg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+body{
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.35)),url(bedroom.jpg);
+  background-size: cover;
+}
+.banner1{
+    width: 100%;
+    height: 100%;
+    /* background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.35)),url(bedroom.jpg); */
+    background-size: cover;
+    background-position: center;
+
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.navbar ul li::after {
+    content: '';
+    height:3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #ffff;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color:#ffff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background:#009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+.content2{
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /* text-align: center; */
+    color: #ffff;
+}
+.content2 {
+    font-size: 20px;
+    margin-top: 50px;
+    position: absolute;
+    /* padding: 0px 180px 0px 250px; */
+    text-align: center;
+    /* font-family: Apparel,Helvetica,Arial,Serif; */
+    font-family: Californian FB;
+    background-color: #ffff;
+    color: black;
+    height: 100px;
+    margin-left: 200px;
+    padding-bottom: -100px;
+}
+  .contentt2{
+    font-size: 20px;
+    margin-top: 50px;
+    position: absolute;
+    /* padding: 0px 180px 0px 250px; */
+    text-align: center;
+    /* font-family: Apparel,Helvetica,Arial,Serif; */
+    font-family: Californian FB;
+    background-color: #ffff;
+    color: black;
+    height: 100px;
+    /* margin-left: 200px; */
+    padding-bottom: -100px;
+  }
+/* .content2 h3{
+    font-size: 45px;
+    position: absolute;
+    margin-top: 50px;
+    font-family: Californian FB;
+    background-color: white;
+    color: black;
+    height: 200px;
+    margin-left: 400px;
+} */
+/* .content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+} */
+
+* {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+} */
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
